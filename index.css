@@ -1,0 +1,107 @@
+/*
+* index.css
+* put your css here
+*/
+
+* {
+	box-sizing: 		border-box;
+}
+
+.sidebar {
+	height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+}
+
+span {
+	font-size: 50px;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidebar .closebtn {
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18;}
+}
+
+.content {
+	max-width: 1500px;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 1cm;
+}
+
+input[type=text] {
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	/*background-image: url('http://www.clipartkid.com/images/775/search-icon-clip-art-at-clker-com-vector-clip-art-online-royalty-643l5L-clipart.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;*/
+	padding: 12px 20px 12px 40px;
+}
+
+select {
+	width: 100%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+	font-size: 20px;
+}
+
+.campus-drop-down {
+	font-size: 50px;
+}
+
+.button {
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	padding: 15px 32px ;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100% ;
+	margin-top: .5cm;
+	margin-bottom: .5cm;
+}
+
+.post {
+	background-color: #008cba;
+}

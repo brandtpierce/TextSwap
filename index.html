@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TextSwap</title>
+
+	<meta name="viewport" 
+		  content="width=device-width, user-scalable=no, 
+		  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- This is not a secure content policy, should be locked down for prod -->
+	<meta http-equiv="Content-Security-Policy" 
+		  content="default-src 'self' gap://ready; 
+		           style-src   'self' 'unsafe-inline'; 
+		           script-src  'self' 'unsafe-inline' 'unsafe-eval';">
+		           
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> <!-- no onload - see index.js for "ondeviceready" event listener -->
+
+	<!-- Your HTML goes here -->
+	
+	<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Feedback</a>
+</div>
+
+<span onclick="openNav()">&#9776;</span>
+
+<div id="main">
+
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="content">
+
+<!-- Header -->
+<header class="title">
+<h1><b>Text Swap</b></h1>
+</header>
+
+<!-- Search Bar-->
+<div class="row" id="mySearch">
+<input type="text" name="search" placeholder="Enter ISBN, Author, or Book Title">
+</div>
+
+<!-- Drop Down -->
+<div class="campus-drop-down">
+<select>
+	<option value="tempe">Tempe</option>
+	<option value="downtown">Downtown Phoenix</option>
+	<option value="West">West</option>
+	<option value="poly">Polytechnic</option>
+</select>
+</div>
+
+<!-- Search Button -->
+
+
+<button class="button search">Search</button>
+
+
+<!-- Post Button -->
+
+<button class="button post">Post</button>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+
+
+
+
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>
